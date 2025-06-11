@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { type } from "os";
 
 const otpSchema = new mongoose.Schema({
   email: {
@@ -22,3 +21,4 @@ const otpSchema = new mongoose.Schema({
   timestamps: true
 })
 
+export const otpModel = mongoose.model("otpModel", otpSchema)
