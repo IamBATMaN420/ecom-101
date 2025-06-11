@@ -6,7 +6,7 @@ const otpSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  OTP: {
+  otp: {
     type: Number,
     required: true,
   },
@@ -14,9 +14,7 @@ const otpSchema = new mongoose.Schema({
     type: Date,
     default: () => new Date(Date.now() + 5 * 60 * 1000),
     index: { expires: "5m" }
-
   },
-
 }, {
   timestamps: true
 })
