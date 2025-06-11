@@ -1,11 +1,13 @@
 
 import mongoose from "mongoose"
+import dotenv from "dotenv"
 
+dotenv.config()
 
 const URI = process.env.MONGO_URI
 
 if (!URI) {
-  throw new Error("mongoo connection URI is not present")
+  throw new Error("MONGO_URI is not defined in environment variables");
 }
 
 async function connectDb() {

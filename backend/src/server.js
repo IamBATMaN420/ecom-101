@@ -9,4 +9,5 @@ connectDb();
 
 app.listen(PORT, () => {
   console.log(`server is runnning on ${PORT}`)
+  // connectDb();
 })
