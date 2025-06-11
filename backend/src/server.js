@@ -14,5 +14,4 @@ app.use("/api", userRoutes)
 
 app.listen(PORT, () => {
   console.log(`server is runnning on ${PORT}`)
-
 })

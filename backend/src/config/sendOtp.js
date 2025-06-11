@@ -1,13 +1,12 @@
 import { createTransport } from "nodemailer"
 export const sendOtp = async ({ email, subject, otp }) => {
   const transport = createTransport({
-    host: "smtp.gamil.com",
+    host: "smtp.gmail.com",
     port: 465,
     auth: {
       user: process.env.gmail,
       pass: process.env.password
     }
-
   })
   const html = `<!DOCTYPE html>
 <html lang="en">
